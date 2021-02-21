@@ -1,12 +1,13 @@
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
 import { VideoServiceService } from '../service/video-service.service';
 
 @Component({
   selector: 'app-video-player',
   templateUrl: './video-player.component.html',
-  styleUrls: ['./video-player.component.scss']
+  styleUrls: ['./video-player.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class VideoPlayerComponent implements OnInit {
   // snapshotParam: string = "initial value";

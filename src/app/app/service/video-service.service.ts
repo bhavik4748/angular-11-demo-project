@@ -27,8 +27,13 @@ export class VideoServiceService {
       return a.time - b.time;
     })
 
-    for(let obj of finalArray){
-      ans += `<span>${obj.speaker} </span>: <span> ${obj.snippet}</span> <br/>`;
+    for (let obj of finalArray) {
+      let className;
+      if (obj.speaker == 'Cust')
+        className = 'cust';
+      else
+      className = 'rep';
+      ans += `<span class=${className} >${obj.speaker} </span>: <span> ${obj.snippet}</span> <br/>`;
     }
     return ans;
   }
