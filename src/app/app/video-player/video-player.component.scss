@@ -1,7 +1,9 @@
 .text-center {
   text-align: center;
-  background-color: #fff;
-  border: 1px solid black;
+
+  background: #FFFFFF;
+  border: 1px solid #D7DADE;
+  border-radius: 5px;
 }
 
 .container {
@@ -20,4 +22,15 @@
 
 .rep {
   color: #00A7D1
+}
+
+@media only screen and (min-width: 992px) {
+    .text-center{
+        text-align: center;
+        background: #FFFFFF;
+        border: 1px solid #D7DADE;
+        border-radius: 5px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
 }
