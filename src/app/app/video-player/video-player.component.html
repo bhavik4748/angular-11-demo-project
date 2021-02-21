@@ -4,7 +4,7 @@
     <h2>Moment from meeting with Two Pillars</h2>
   </div>
   <div *ngIf="videoId">
-    <video width="300" height="180" controls poster="">
+    <video width="300" height="180" controls poster="../../../assets/images/chorus-logo.svg">
       <source src={{videoSrc}} type="video/mp4">
       Your browser does not support the video tag.
     </video>
@@ -13,7 +13,6 @@
         Video does not exist
   </div>
 <div class="transcipts">
-
     <div [innerHtml]="processTranscript"></div>
 </div>
 
