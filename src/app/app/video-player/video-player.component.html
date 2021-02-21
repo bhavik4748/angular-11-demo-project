@@ -1,0 +1,20 @@
+
+<div class="text-center">
+  <div class="">
+    <h2>Moment from meeting with Two Pillars</h2>
+  </div>
+  <div *ngIf="videoId">
+    <video width="300" height="180" controls poster="">
+      <source src={{videoSrc}} type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div *ngIf="badUrl">
+        Video does not exist
+  </div>
+<div class="transcipts">
+    Transcipts:
+    <div [innerHtml]="processTranscript"></div>
+</div>
+
+</div>
